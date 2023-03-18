@@ -1,0 +1,542 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3%;
+    padding-right:2% ;
+}
+.logo {
+    margin: .5rem;
+}
+.navbar-links ul {
+    display: flex;
+}
+.navbar-links li {
+    list-style: none;
+    display: block;
+    padding: 1rem;
+    font-size: 1.1rem;
+}
+.navbar-links li:hover {
+    background-color: skyblue;
+    color: white;
+    border-radius: 4px;
+}
+.toogle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.hideme {
+    display: none;
+}
+.healthcare {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.virtual-healthcare {
+    width: 40%;
+    height: auto;
+    line-height: 22px;
+    padding: .5rem;
+    align-self: center;
+    margin: 3%;
+}
+.virtual-healthcare header {
+    height: auto;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 42px;
+}
+.virtual-healthcare p {
+    margin-top: 5%;
+    line-height: 24px;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    color: grey;
+}
+.virtual-health-image {
+    width: 60%;
+    height: 100%;
+    align-self: center;
+}
+.virtual-health-image img {
+    width: 100%;
+    height: 100%;
+}
+.virtual-healthcare button {
+    margin-top: 7%;
+    margin-bottom: 1%;
+    height: 38px;
+    width: 120px;
+    border-radius: 30px;
+    background-color: rgb(66, 169, 234);
+    border: none;
+    color: white;
+}
+.services {
+    text-align: center;
+    margin-top: 7%;
+}
+.services header {
+    margin-top: 2%;
+    font-size: 1.5rem;
+}
+.services section {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-family: sans-serif;
+    line-height: 24px;
+    color: grey;
+    font-size: 1.2rem;
+}
+.services .flex {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-top: 2%;
+}
+.flex .row-block {
+    margin: 3%;
+}
+.services button {
+    height: 40px;
+    width: 140px;
+    margin-top: 2%;
+    border-radius: 30px;
+    background-color: white;
+    font-weight: bold;
+    color: rgb(66, 169, 234);
+    border: 2px solid rgb(66, 169, 234);
+}
+.provider {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 7%;
+}
+.provider .provider-image {
+    width: 60%;
+    height: 100%;
+    align-self: center;
+}
+.provider-image img {
+    width: 100%;
+    height: 100%;
+}
+.provider-content {
+    width: 40%;
+    height: auto;
+    line-height: 20px;
+    text-align: justify;
+    padding: .5rem;
+    align-self: center;
+    margin: 3%;
+}
+.provider-content header {
+    height: auto;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 44px;
+}
+.provider-content p {
+    margin-top: 7%;
+    line-height: 24px;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    color: grey;
+}
+.provider-content button {
+    margin-top: 6%;
+    margin-bottom: 1%;
+    height: 38px;
+    width: 120px;
+    border-radius: 30px;
+    background-color: white;
+    border: 2px solid rgb(66, 169, 234);
+    color: rgb(66, 169, 234);
+}
+.download {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 7%;
+}
+.download-app {
+    width: 40%;
+    height: auto;
+    line-height: 20px;
+    padding: .5rem;
+    align-self: center;
+    margin: 3%;
+}
+.download-app header {
+    height: auto;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 44px;
+}
+.download-app p {
+    margin-top: 6%;
+    line-height: 20px;
+    font-family: sans-serif;
+    font-size: 1.1rem;
+    color: grey;
+}
+.app-image {
+    width: 60%;
+    height: 100%;
+    align-self: center;
+}
+.app-image img {
+    width: 100%;
+    height: 100%;
+}
+.download button {
+    margin-top: 7%;
+    margin-bottom: 1%;
+    height: 38px;
+    width: 120px;
+    border-radius: 30px;
+    background-color: white;
+    border: 2px solid rgb(66, 169, 234);
+    color: rgb(66, 169, 234);
+}
+.customer-feedback {
+    width: 80%;
+    height: auto;
+    padding-bottom: 5%;
+    margin: 10%;
+    background-color: rgb(66, 169, 234);
+    color: white;
+    text-align: center;
+    border-radius: 18px;
+}
+.customer-feedback h1 {
+    padding-top: 2%;
+}
+.customer-feedback .flex {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    width: 100%;
+}
+.customer-feedback .flex .profile {
+    width: 50%;
+    margin-top: 3%;
+}
+.customer-feedback .flex .about-customer {
+    width: 45%;
+    text-align: justify;
+    margin-top: 3%;
+    margin-right: 2%;
+}
+.customer-feedback .flex .about-customer p {
+    margin: 5%;
+}
+.latest-article {
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+}
+.latest-article h1{
+    font-size: 3rem;
+}
+.flex {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2%;
+}
+.latest-article .flex .article {
+    width: 26%;
+    margin: 3%;
+    background-color: aliceblue;
+    border-radius: 15px;
+}
+.latest-article .flex .article img {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    width: 100%;
+}
+.latest-article .flex .article h3 {
+    padding: 3%;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.latest-article .flex .article p {
+    padding: 2%;
+}
+.latest-article-footer {
+    padding: 3%;
+    color: rgb(66, 169, 234);
+    font-weight: bold;
+    font-size: 1rem;
+}
+.latest-article button {
+    margin-top: 2%;
+    height: 38px;
+    width: 150px;
+    border-radius: 30px;
+    background-color: white;
+    border: 2px solid rgb(66, 169, 234);
+    color: rgb(66, 169, 234);
+    font-weight: bold;
+    margin-bottom: 4%;
+}
+.footer {
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(66, 169, 234);
+    color: white;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+}
+.footer .col{
+    padding-top: 0.8%;
+    width: 25%;
+}
+.col p{
+    padding-top: 6%;
+    line-height: 20px;
+}
+.footer .col-item{
+    padding-top: 2%;
+    width: 15%;
+}
+.col-item ul{
+    list-style-type: none;
+}
+.col-item ul li{
+    line-height: 30px;
+}
+.head{
+    padding-bottom: 8%;
+}
+
+@media (max-width:650px) {
+    .toogle-button {
+        display: flex;
+    }
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar-links li {
+        text-align: center;
+    }
+    .hideme {
+        display: none;
+    }
+    .hideme:checked~.navbar-links {
+        display: block;
+    }
+    .healthcare{
+        flex-wrap: wrap;
+    }
+    .virtual-healthcare{
+        width: 100%;
+        text-align: center;
+        padding: 5%;
+    }
+    .virtual-healthcare header{
+        font-size: 1.8rem;
+        line-height: 30px;
+
+    }
+    .virtual-healthcare p{
+        font-size: 1.2rem;
+        margin-top: 4%;
+        line-height: 22px;
+        color: grey;
+    }
+    .virtual-healthcare button{
+        width: 40%;
+        height: 45px;
+        font-size: 0.9rem;
+        margin-top: 7%;
+    }
+    .virtual-health-image{
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5%;
+        height: 45vh;
+        margin-bottom: 10%;
+    }
+    .services{
+        width: 100%;
+    }
+    .services header{
+        font-size: 1.1rem;
+        line-height: 30px;
+    }
+    .services section{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+        font-size: 1rem;
+        line-height: 22px;  
+    }
+    .services .flex{   
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    .row-block{
+        margin-top: 5%;
+    }
+    .row-block img{
+        width: 30%;
+    }
+    .provider{
+        margin-top: 15%;
+        flex-wrap: wrap;
+    }
+    .provider-image{
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5%;
+        height: 45vh;
+        margin-bottom: 2%;
+    }
+    .provider-content{
+        width: 100%;
+        text-align: center;
+        padding: 6%;
+    }
+    .provider-content header{
+        font-size: 1.8rem;
+        line-height: 30px;
+    }
+    .provider-content p{
+        font-size: 1.2rem;
+        margin-top: 7%;
+        line-height: 22px;
+        color: grey;
+    }
+    .provider-content button{
+        width: 40%;
+        height: 45px;
+        font-size: 1rem;
+        margin-top: 5%;
+    }
+    .download{
+        margin-top: 1%;
+        flex-wrap: wrap;
+    }
+    .download-app{
+        width: 100%;
+        text-align: center;
+        padding: 6%;
+    }
+    .download-app header{
+        font-size: 1.8rem;
+        line-height: 30px;
+    }
+    .download-app p{
+
+        font-size: 1.2rem;
+        margin-top: 7%;
+        line-height: 22px;
+        color: grey;
+    }
+    .download-app button{
+        width: 40%;
+        height: 45px;
+        font-size: 1rem;
+        margin-top: 5%;
+    }
+    .app-image{
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5%;
+        height: 45vh;
+        margin-bottom: 2%;
+    }
+    .customer-feedback h1{
+        font-size: 1.8rem;
+    }
+    .customer-feedback .flex{
+        flex-direction: column;
+    }
+    .customer-feedback .flex .profile{
+        width: 100%;
+    }
+    .customer-feedback .flex .about-customer{
+        text-align: center;
+        width: 100%;
+        font-size: 1rem;
+    }
+    .latest-article h1{
+        font-size: 1.8rem;
+        line-height: 30px;
+    }
+    .latest-article .flex{
+        flex-direction: column;
+    }
+     .latest-article .flex .article{
+        width: 68%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 1px 1px 2px 3px lightgray;
+    }
+    .latest-article button{
+        width: 40%;
+        height: 45px;
+        font-size: 1rem;
+        margin-top: 5%;
+    }
+    .footer{
+        flex-direction: column;
+        height: auto;
+    }
+    .footer .col{
+        width: 60%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;    
+    }
+    .footer .col-item{
+        margin-top: 7%;  
+    }
+    .head{
+        padding-bottom: 2%;
+    }
+    .footer .fot{
+        width: 60%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
